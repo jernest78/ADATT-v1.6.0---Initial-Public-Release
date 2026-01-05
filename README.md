@@ -1,13 +1,7 @@
-# Employee Offboarding Automation with ADATT: PowerShell Tool for IT Admins in Hybrid AD & Entra ID
+# Automated Employee Offboarding Tool for IT Admins in Hybrid (AD & Microsoft Entra ID) Environments
+Transform your user termination process from 35 minutes of manual clicking to 60 seconds of automated perfection. ADATT handles AD, Microsoft 365, MFA, groups, sessions, and generates compliance-ready reports automatically.
 
-![Version](https://img.shields.io/badge/version-1.4.1-blue)
-![License](https://img.shields.io/badge/license-Commercial-green)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
-![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue)
-
-**Offboarding Without Missed Steps: ADATT for Hybrid AD & Entra ID Environments**
-
-Transform your user termination process from 35 minutes of manual clicking to 60 seconds of automated perfection. ADATT handles AD, Microsoft 365, MFA, groups, sessions, Bulk termination (2-100 max) at once,  and generates compliance-ready reports automatically.
+**NEW in v1.5.0:** Full support for cloud-only Entra ID users, intelligent mailbox detection, confirmation dialogs, and 5x faster bulk processing!
 
 ---
 
@@ -16,10 +10,20 @@ Transform your user termination process from 35 minutes of manual clicking to 60
 ### Core Capabilities
 - ✅ **Single User Termination** - Complete offboarding in 60 seconds
 - ✅ **Bulk Offboarding** - Process 2-100 users simultaneously with CSV/TXT import
+- ✅ **Cloud-Only User Support** - Works with Entra ID-only accounts (no AD required) 🆕
+- ✅ **Intelligent Mailbox Detection** - Skips Exchange ops when no mailbox assigned 🆕
 - ✅ **MFA Reset** - Remove ALL authentication methods (Phone, Authenticator, FIDO2, etc.)
 - ✅ **Session Management** - Sign out users from all active Microsoft 365 sessions
 - ✅ **Auto-Reply Configuration** - Set mailbox auto-replies with custom messages
-- ✅ **Audit Reports** - Auto-generate CSV reports with timestamps and status
+- ✅ **Audit Reports** - Auto-generate CSV reports with timestamps and account types
+
+### Account Type Support 🆕
+ADATT now supports ALL Microsoft identity scenarios:
+- **Cloud-Only** - Users created directly in Entra ID (no Active Directory account)
+- **Hybrid** - Users synchronized from Active Directory to Entra ID
+- **On-Premises** - Users in Active Directory only (not synced to cloud)
+
+All operations automatically detect account type and adjust accordingly!
 
 ### What ADATT Does Automatically
 1. **Active Directory**
@@ -29,13 +33,15 @@ Transform your user termination process from 35 minutes of manual clicking to 60
    - Clears manager field
 
 2. **Microsoft 365 / Exchange Online**
-   - Converts mailbox to shared
-   - Hides from Global Address List
-   - Sets automatic reply message
+   - Intelligently checks for mailbox existence 🆕
+   - Converts mailbox to shared (if exists)
+   - Hides from Global Address List (if exists)
+   - Sets automatic reply message (if exists)
    - Removes Office 365 licenses
    - Revokes all active sessions
 
 3. **Entra ID (Azure AD)**
+   - Disables cloud-only accounts 🆕
    - Removes ALL MFA methods:
      - Phone authentication
      - Microsoft Authenticator
@@ -48,9 +54,11 @@ Transform your user termination process from 35 minutes of manual clicking to 60
 
 4. **Compliance & Audit**
    - Generates timestamped CSV reports
+   - Records account type (Cloud-Only, Hybrid, On-Premises) 🆕
    - Logs all operations for audit trail
    - Records who performed termination and when
    - Tracks success/failure for each operation
+   - Documents mailbox operation status 🆕
 
 ---
 
@@ -215,6 +223,7 @@ Click the **Open Reports** button in the UI to instantly access your reports fol
 - **Duration**: 14 days
 - **Features**: Full access to all features
 - **No credit card required**
+
 
 ### One-Time Purchase - Lifetime Access
 
@@ -384,3 +393,4 @@ Special thanks to the IT admin community for feedback and feature requests.
 ---
 
 **Made with ❤️ for IT Professionals who deserve better tools**
+
