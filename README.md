@@ -5,6 +5,9 @@ Transform your user termination process from 35 minutes of manual clicking to 60
 
 ---
 
+<img width="1191" height="813" alt="Adatt-GUI" src="https://github.com/user-attachments/assets/fd4ea4cc-9d35-4e91-908d-90cac34c7f35" />
+
+
 ## 🚀 Features
 
 ### Core Capabilities
