@@ -12,7 +12,8 @@
 ADATT handles Active Directory, Microsoft 365, MFA, groups, sessions, and generates compliance-ready reports automatically—all through an intuitive graphical interface.
 
 **What's New in v1.6.0:** Enhanced email notifications for terminated users, automated reporting to IT admins, and improved cloud-only user support with intelligent mailbox detection!
-<img width="2800" height="1857" alt="adatt-Interface" src="https://github.com/user-attachments/assets/cecca0be-8b9a-4867-b34d-236e458625e2" />
+
+<img width="2653" height="1760" alt="Adatt-gradient" src="https://github.com/user-attachments/assets/418d5291-3826-4a87-8ed8-2dcea51f0720" />
 
 ---
 
