@@ -219,10 +219,6 @@ Install-Module ExchangeOnlineManagement -Scope CurrentUser -Force
    - Right-click `ADATT-UX.ps1` → "Run with PowerShell"
    - Or launch from Start Menu
 
-2. **Activate License**
-   - Click "Activate License" button
-   - Enter license key (or start 14-day free trial)
-   - No credit card required for trial
 
 3. **Connect to Microsoft 365** (on first cloud operation)
    - ADATT prompts for Graph authentication
@@ -334,7 +330,7 @@ Automated email reporting to IT administrators:
 
 ### Security Features
 - ✅ License validation with hardware fingerprinting
-- ✅ 30-day offline grace period
+- ✅ Get ADATT -14-day money-back guarantee
 - ✅ Encrypted license storage (Windows DPAPI)
 - ✅ No credential storage (uses Windows authentication)
 - ✅ Audit logging for compliance
@@ -588,16 +584,11 @@ Click the **"Open Reports"** button in ADATT UI to instantly open the Reports fo
 - No password storage
 - Session tokens managed by ExchangeOnlineManagement module
 
-### License Security
 
-#### License Validation
-- Hardware fingerprinting (non-reversible hash)
-- License keys validated against LemonSqueezy Cloudflare Worker
-- Revalidation every 7 days (configurable)
-- 30-day offline grace period
+
 
 #### License Storage
-- License file: `<Script Root>\license-<HardwareID>.json`
+
 - Encrypted using Windows DPAPI (Data Protection API)
 - Only decryptable by the user account that activated
 - Cannot be copied to other machines
@@ -702,7 +693,7 @@ Copyright © 2025 Jose Ernest / Unifosec
 This software is licensed, not sold. By installing and using ADATT, you agree to the terms of the End User License Agreement (EULA).
 
 **License Types**:
-- **Trial**: 14 days, all features, no credit card required
+- **Get ADATT - 14-day money back guarantee
 - **Solo Admin**: 1 device, $299 (one-time payment, lifetime access)
 - **Team**: 5 devices, $799 (one-time payment, lifetime access)
 - **Business**: 20 devices, $1999 (one-time payment, lifetime access)
@@ -789,10 +780,9 @@ This tool was born from frustration with manual offboarding processes and the la
    - Extract ZIP for portable use
    - Launch `ADATT-UX.ps1`
 
-3. **Start Free Trial**
+3. **Start: Get ADATT - 14 day money-back guarantee**
    - Click "Activate License"
-   - Select "Start 14-Day Trial"
-   - No credit card required
+     
 
 4. **Connect to Microsoft 365**
    - ADATT prompts on first cloud operation
